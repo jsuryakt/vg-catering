@@ -526,13 +526,13 @@ section::before,section::after {
 
 @media (max-width:767px) {
     #header .banner h1 {
-        font-size:60px;
+        font-size:30px;
     }
     #header .subtitle h4 {
-        font-size: 22px;
+        font-size: 18px;
     }
     .subtitle h3 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .social-bar {
