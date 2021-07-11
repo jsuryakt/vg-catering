@@ -124,16 +124,16 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
+            <li style="display: none"><a href="#header"></a></li>
             <li><a href="#story">Story</a></li>
-            <li><a href="#reservation">Reservation</a></li>
-            <li><a href="#chefs">Our Chefs</a></li>
-
-            <li><a href="#facts">Snaps</a></li>
+            <li><a href="#snaps">Snaps</a></li>
+            <!-- <li><a href=""></a></li> -->
             <li><a href="#food-menu">Food Menu</a></li>
-            <li><a href="#special-offser">Special Offers</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+
+            <!-- <li><a href="#special-offser">Special Offers</a></li> -->
 
             <!--fix for scroll spy active menu element-->
-            <li style="display: none"><a href="#header"></a></li>
           </ul>
         </div>
         <!--/.navbar-collapse -->
@@ -149,6 +149,7 @@
           <h1 class="">VG Catering</h1>
         </div>
         <div class="subtitle"><h4>Serving Smiles</h4></div>
+        <div class="subtitle"><img src="img/veg_non_veg.png" height="80px" width="160px" alt="Veg & Non-Veg"></div>
       </div>
       <div class="bottom text-center">
         <a id="scrollDownArrow" href="#"><i class="fas fa-chevron-down"></i></a>
@@ -214,19 +215,19 @@
           <div class="col-sm-6">
             <div class="col-wrapper">
               &nbsp; &nbsp;
-              <div class="icon-border bm10"><i class="fa fa-truck"></i></div>
+              <div class="icon-border bm10"><i class="fas fa-truck"></i></div>
 
-              <h4>500+</h4>
+              <h4 title="Delicious orders served">500+</h4>
               <div class="success">
-                <p>Delicious Orders Delivered</p>
+                <p>Orders Delivered</p>
               </div>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="col-wrapper">
               &nbsp; &nbsp;
-              <div class="icon-border bm10"><i class="fa fa-users"></i></div>
-              <h4>400+</h4>
+              <div class="icon-border bm10"><i class="fas fa-users"></i></div>
+              <h4 title="Very happy customers">400+</h4>
               <div class="success">
                 <p>Happy Customers</p>
               </div>
@@ -238,7 +239,7 @@
     </div>
     <!-- #facts -->
     <section class="ss-style-top"></section>
-    <div class="container inner">
+    <div id="snaps" class="container inner">
         <h2 class="section-title text-center">Delicacies served</h2>
         <p class="lead main text-center">
             Some of the mouth watering delicacies we offer 
@@ -256,16 +257,33 @@
           <li data-target="#myCarousel" data-slide-to="7"></li>
           <li data-target="#myCarousel" data-slide-to="8"></li>
           <li data-target="#myCarousel" data-slide-to="9"></li>
+          <li data-target="#myCarousel" data-slide-to="10"></li>
+          <li data-target="#myCarousel" data-slide-to="11"></li>
+          <li data-target="#myCarousel" data-slide-to="12"></li>
+          <li data-target="#myCarousel" data-slide-to="13"></li>
+          <li data-target="#myCarousel" data-slide-to="14"></li>
+          <li data-target="#myCarousel" data-slide-to="15"></li>
+          <li data-target="#myCarousel" data-slide-to="16"></li>
+          <li data-target="#myCarousel" data-slide-to="17"></li>
+          <li data-target="#myCarousel" data-slide-to="18"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
+            <img src="img/carousel/slide_0.jpeg" alt="VG Caterers" />
+          </div>
+
+          <div class="item">
             <img src="img/carousel/slide_1.jpeg" alt="VG Caterers" />
           </div>
 
           <div class="item">
             <img src="img/carousel/slide_2.jpeg" alt="VG Caterers" />
+          </div>
+          
+          <div class="item">
+            <img src="img/carousel/slide_2_5.jpeg" alt="VG Caterers" />
           </div>
 
           <div class="item">
@@ -277,7 +295,15 @@
           </div>
 
           <div class="item">
+            <img src="img/carousel/slide_4_5.jpeg" alt="VG Caterers" />
+          </div>
+
+          <div class="item">
             <img src="img/carousel/slide_5.jpeg" alt="VG Caterers" />
+          </div>
+
+          <div class="item">
+            <img src="img/carousel/slide_5_5.jpeg" alt="VG Caterers" />
           </div>
 
           <div class="item">
@@ -289,7 +315,19 @@
           </div>
 
           <div class="item">
+            <img src="img/carousel/slide_7_5.jpeg" alt="VG Caterers" />
+          </div>
+
+          <div class="item">
             <img src="img/carousel/slide_8.jpeg" alt="VG Caterers" />
+          </div>
+
+          <div class="item">
+            <img src="img/carousel/slide_8_4.jpeg" alt="VG Caterers" />
+          </div>
+
+          <div class="item">
+            <img src="img/carousel/slide_8_5.jpeg" alt="VG Caterers" />
           </div>
 
           <div class="item">
@@ -298,6 +336,14 @@
 
           <div class="item">
             <img src="img/carousel/slide_10.jpeg" alt="VG Caterers" />
+          </div>
+
+          <div class="item">
+            <img src="img/carousel/slide_10_5.jpeg" alt="VG Caterers" />
+          </div>
+
+          <div class="item">
+            <img src="img/carousel/slide_11.jpeg" alt="VG Caterers" />
           </div>
         </div>
 
@@ -311,11 +357,16 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <div class="text-center">
+        <button onclick="window.location.href='photos.html'" type="button" class="btn btn-warning all-but btn-lg">
+          View all Photos
+        </button>
+        </div>
     </div>
 
 
     <div id="food-menu" class="light-wrapper">
-      <section class="ss-style-top"></section>
+      <!-- <section class="ss-style-top"></section> -->
       <div class="container inner">
         <h2 class="section-title text-center">Food Menu</h2>
         <p class="lead main text-center">
@@ -477,157 +528,31 @@
     </div>
     <!--/#food-menu-->
 
-    <div id="special-offser" class="parallax pricing">
-      <div class="container inner">
-        <h2 class="section-title text-center">Special Offers</h2>
-        <p class="lead main text-center">
-          There is no sincerer love than the love of food!
-        </p>
-
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="pricing-item">
-              <a href="#"
-                ><img
-                  class="img-responsive img-thumbnail"
-                  src="img/dish/dish3.jpg"
-                  alt=""
-              /></a>
-
-              <div class="pricing-item-details">
-                <h3><a href="#">Chicken Fried Rice</a></h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a class="btn btn-danger" href="#">Order now</a>
-                <div class="clearfix"></div>
-              </div>
-              <!--price tag-->
-              <span class="hot-tag br-red">$26</span>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="pricing-item">
-              <a href="#"
-                ><img
-                  class="img-responsive img-thumbnail"
-                  src="img/dish/dish2.jpg"
-                  alt=""
-              /></a>
-
-              <div class="pricing-item-details">
-                <h3><a href="#">Hot Fried Chicken</a></h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a class="btn btn-danger" href="#">Order now</a>
-                <div class="clearfix"></div>
-              </div>
-              <!--price tag-->
-              <span class="hot-tag br-lblue">$37</span>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="clearfix visible-md"></div>
-          <div class="col-md-6 col-sm-6">
-            <div class="pricing-item">
-              <a href="#"
-                ><img
-                  class="img-responsive img-thumbnail"
-                  src="img/dish/dish4.jpg"
-                  alt=""
-              /></a>
-
-              <div class="pricing-item-details">
-                <h3><a href="#">Thi Chicken Momo</a></h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a class="btn btn-danger" href="#">Order now</a>
-                <div class="clearfix"></div>
-              </div>
-              <!--price tag-->
-              <span class="hot-tag br-green">$54</span>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="pricing-item">
-              <a href="#"
-                ><img
-                  class="img-responsive img-thumbnail"
-                  src="img/dish/dish1.jpg"
-                  alt=""
-              /></a>
-
-              <div class="pricing-item-details">
-                <h3><a href="#">Cocktail Sushi</a></h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a class="btn btn-danger" href="#">Order now</a>
-                <div class="clearfix"></div>
-              </div>
-              <!--price tag-->
-              <span class="hot-tag br-red">$27</span>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /#special-offser -->
-
     <div id="reservation" class="light-wrapper">
       <section class="ss-style-top"></section>
       <div class="container inner">
         <h2 class="section-title text-center">Reservation</h2>
         <p class="lead main text-center">
-          Reserve your table &amp; enjoy lorem Ipsum
+          Reserve your order &amp; enjoy the party
         </p>
         <div class="row">
           <div class="col-md-6">
             <form class="form form-table" method="post" name="">
               <div class="form-group">
                 <h4>
-                  Fill the form for table reservation (all fields required)
+                  Fill the form for order reservation (all fields required)
                 </h4>
               </div>
 
               <div class="row">
-                <div class="col-lg-6 col-md-6 form-group">
+                <div class="col-lg-12 col-md-6 form-group">
                   <label class="sr-only" for="first_name1">first name</label>
                   <input
                     class="form-control hint"
                     type="text"
                     id="first_name1"
                     name="first_name"
-                    placeholder="First name"
-                    required=""
-                  />
-                </div>
-                <div class="col-lg-6 col-md-6 form-group">
-                  <label class="sr-only" for="last_name1">last name</label>
-                  <input
-                    class="form-control hint"
-                    type="text"
-                    id="last_name1"
-                    name="last_name"
-                    placeholder="Last name"
+                    placeholder="Name"
                     required=""
                   />
                 </div>
@@ -640,7 +565,7 @@
                     type="email"
                     id="email1"
                     name="email"
-                    placeholder="Email@domain.com"
+                    placeholder="Email"
                     required=""
                   />
                 </div>
@@ -685,33 +610,6 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-6 form-group">
-                  <label class="sr-only" for="alt_reserv_date1"
-                    >time from</label
-                  >
-                  <input
-                    class="form-control datepicker hasDatepicker hint"
-                    type="text"
-                    id="alt_reserv_date1"
-                    name="alt_reserv_date"
-                    placeholder="Time from"
-                    required=""
-                  />
-                </div>
-                <div class="col-lg-6 col-md-6 form-group">
-                  <label class="sr-only" for="time1">time</label>
-                  <input
-                    class="form-control timepicker ui-timepicker-input hint"
-                    type="text"
-                    id="time1"
-                    name="time"
-                    placeholder="Time to"
-                    required=""
-                    autocomplete="off"
-                  />
-                </div>
-              </div>
-              <div class="row">
                 <div class="col-lg-12 col-md-12">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -734,28 +632,28 @@
           </div>
           <!-- col-md-6 -->
           <div class="col-md-5 col-md-offset-1">
-            <h3><i class="fa fa-clock-o fa-fw"></i>Hours</h3>
-            <h4>Breakfast</h4>
-            <p>
-              Mon to Fri: 7:30 AM - 11:30 AM<br />Sat &amp; Sun: 8:00 AM - 9:00
-              AM
-            </p>
-            <h4>Lunch</h4>
-            <p>Mon to Fri: 12:00 PM - 5:00 PM</p>
-            <h4>Dinner</h4>
-            <p>Mon to Sat: 6:00 PM - 1:00 AM<br />Sun: 5:30 PM - 12:00 AM</p>
-
-            <h3><i class="fa fa-map-marker fa-fw"></i>Directions</h3>
-            <p>
-              4120 Lenox Avenue, New York, NY, 10035 76 Saint Nicholas Avenue
-            </p>
-
-            <h3><i class="fa fa-mobile fa-fw"></i>Contacts</h3>
+            <h3><i class="fas fa-mobile fa-fw"></i>Contacts</h3>
             <p>
               Email:
-              <a href="mailto:yourname@meatking.com">yourname@meatking.com</a>
+              <a href="mailto:contact.vgcatering@gmail.com">contact.vgcatering@gmail.com</a>
             </p>
-            <p>Phone: +234 3456 678</p>
+            <p>Phone: 
+            <a href="tel:9880130646">9880130646</a> (Yogish Kotian), <a href="tel:9901913024">9901913024</a> (Ganesh Suvarna)
+            </p>
+
+            <h3><i class="fas fa-map-marker fa-fw"></i>Directions</h3>
+            <p>
+              Shri Vaidyanatha Residency, Ramal Katte, Thumbay, Bantwala, Mangalore, Karnataka 574219
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3982805.0214417656!2d75.0011750843154!3d12.8782429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4a73fdfa6bb1f%3A0xa0b0d4a78f6ce3ea!2sV.G%20CATERERS!5e0!3m2!1sen!2sin!4v1626003170311!5m2!1sen!2sin" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <h3><i class="fas fa-clock fa-fw"></i>Hours</h3>
+            <!-- <h4>Breakfast</h4> -->
+            <p>
+              Mon to Fri : 9:00 AM - 11:00 PM<br />Sat &amp; Sun : 8:00 AM - 11:30
+              PM
+            </p>
+
           </div>
           <!-- col-md-6 -->
         </div>
@@ -766,7 +664,7 @@
     </div>
     <!-- #reservation -->
 
-    <div id="chefs" class="parallax pricing">
+    <!-- <div id="chefs" class="parallax pricing">
       <div class="container inner">
         <h2 class="section-title text-center">Our Chefs</h2>
         <p class="lead main text-center">
@@ -815,32 +713,32 @@
           </div>
         </div>
       </div>
-      <!-- /.container -->
-    </div>
+       /.container 
+    </div> -->
     <!-- /#chefs -->
 
     <footer id="footer" class="dark-wrapper">
-      <section class="ss-style-top"></section>
+      <!-- <section class="ss-style-top"></section> -->
       <div class="container inner">
         <div class="row">
           <div class="col-sm-6">
-            &copy; Copyright MeatKing 2014
-            <br />Theme By
-            <a class="themeBy" href="http://www.Themewagon.com">ThemeWagon</a>
+            &copy; Copyright VG Catering 2021
+            <br />Designed By
+            <a class="themeBy" href="https://www.linkedin.com/in/jsuryakt" target="_blank">Jayasurya</a>
           </div>
           <div class="col-sm-6">
             <div class="social-bar">
-              <a href="#" class="fa fa-instagram tooltipped" title=""></a>
-              <a href="#" class="fa fa-youtube-square tooltipped" title=""></a>
-              <a href="#" class="fa fa-facebook-square tooltipped" title=""></a>
+              <a href="#" class="fab fa-instagram tooltipped" title=""></a>
+              <a href="#" class="fab fa-youtube-square tooltipped" title=""></a>
+              <a href="#" class="fab fa-facebook-square tooltipped" title=""></a>
               <a
                 href="#"
-                class="fa fa-pinterest-square tooltipped"
+                class="fab fa-pinterest-square tooltipped"
                 title=""
               ></a>
               <a
                 href="#"
-                class="fa fa-google-plus-square tooltipped"
+                class="fab fa-google-plus-square tooltipped"
                 title=""
               ></a>
             </div>
