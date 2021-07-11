@@ -1,3 +1,2 @@
 # Site under construction
 
-### - jsuryakt
