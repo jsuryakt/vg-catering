@@ -1,27 +1,4 @@
-/*  
-Theme Name: MeatKing
-Version:    1.14.20
-Author:     ThemeWagon
 
-
-TABLE OF CONTENTS
-    01 - General and Typography
-    02 - Header
-    03 - Navigation
-    04 - Services
-    05 - Parallax
-    06 - Food menu
-    07 - Special offers
-    08 - Reservation
-    09 - Chefs
-    10 - Footer
-    11 - Responsive styles
-*/
-
-
-/* ==========================================================================
-    01. General and Typography 
-========================================================================== */
 body {
     font-family:'Kreon',serif;
     -webkit-font-smoothing:antialiased;
