@@ -108,31 +108,37 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-var form = document.getElementById("myForm");
 function handleForm() { 
-	// event.preventDefault(); 
 	for (let element of document.getElementsByClassName("alert-box")){
 		element.style.display="block";
 	 }
-	 shareForm();
 	} 
-form.addEventListener('submit', handleForm);
 
 function shareForm() {
+	var formData = document.getElementById("myForm")
+	if(formData.checkValidity()) {
+	var form = new FormData(formData);
 	var name = form.get('name');
 	var email = form.get('email');
     var phone = form.get('phone');
 	var reservation_date = form.get('reservation_date');
 	var number_of_guests = form.get('number_of_guests');
+	var date = new Date(reservation_date.toString());
 
     var url = "https://wa.me/919110258479?text=" 
-    + "Name: " + name + "%0a"
+    + "Hello VG Caterers,%0a%0aI'm " + name + ",%0a"
     + "Phone: " + phone + "%0a"
     + "Email: " + email  + "%0a"
-    + "Reservation Date: " + reservation_date + "%0a"
-	+ "Guests: " + number_of_guests;
+    + "I want to reserve an order on : " + date.toDateString() + "%0a"
+	+ "Number of Guests : " + number_of_guests+ "%0a%0a"
+	+"(Click on SEND message) -->";
+	
 
     window.open(url, '_blank').focus();
+	}
+	else {
+		console.log("Form invalid");
+	}
 }
 
 function gotowhatsapp() {

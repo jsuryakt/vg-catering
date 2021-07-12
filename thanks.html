@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js'></script>
+    <style>
+        @media (max-width:600px) {
+      .col h1 {
+        font-size: 70px;
+      }
+
+       p {
+        font-size: 50px !important;
+      }
+      a {
+        font-size: 50px;
+      }
+    
+}
+      html,
+      body {
+        background-color: #ffffff;
+        font-family: "Work Sans", sans-serif;
+      }
+
+      .links > a {
+        color: #636b6f;
+        padding: 0 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .col {
+        margin-top: 80px;
+      }
+
+      .col h1 {
+        font-weight: 800;
+        padding-bottom: 10px;
+        color: #23272a;
+      }
+
+      .col p {
+        font-size: 17px;
+        color: black;
+      }
+
+      .col .col-md-8 {
+        background-color: #eef0f0;
+        padding: 40px;
+      }
+
+      .backlink p {
+        font-size: 16px;
+      }
+
+      .backlink {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        <div class="col-md-8 offset-md-2">
+          <h1 onclick="frame()">Thanks!</h1>
+          <p>The form was submitted successfully.</p>
+          <p>
+            Go back to
+            <a class="links" href="http://vgcatering.me/">VG Catering</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var colors = ["#540d04", "#ffd000"];
+
+      function frame() {
+        confetti({
+          particleCount: 60,
+          angle: 60,
+          spread: 100,
+          origin: { x: 0 },
+          colors: colors,
+        });
+        confetti({
+          particleCount: 60,
+          angle: 120,
+          spread: 100,
+          origin: { x: 1 },
+          colors: colors,
+        });
+      }
+      window.onload = frame();
+    </script>
+  </body>
+</html>

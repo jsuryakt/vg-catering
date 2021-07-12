@@ -544,7 +544,7 @@ section::before,section::after {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:480px) {
     #header .banner h1 {
         font-size:40px;
     }
