@@ -594,14 +594,8 @@
                   <label class="sr-only" for="reserv_date1"
                     >reservation date</label
                   >
-                  <input
-                    class="form-control datepicker hasDatepicker hint"
-                    type="date"
-                    id="reserv_date1"
-                    name="reservation_date"
-                    placeholder="Reservation Date"
-                    required=""
-                  />
+                  <input class="form-control datepicker hasDatepicker hint" id="reserv_date1" required
+                  name="reservation_date" placeholder="Reservation Date"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
                 </div>
                 <div class="col-lg-6 col-md-6 form-group">
                   <label class="sr-only" for="numb_guests1"
