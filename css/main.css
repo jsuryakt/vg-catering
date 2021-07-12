@@ -35,10 +35,10 @@ section::before,section::after {
 }
 .success {
     /* position:relative; */
-    background:#540d04;
+    background:#ffd000;
     padding:5px;
     display:inline-block;
-    color:#ffd000;
+    color:#540d04;
 }
 
 /* Separators Styles */
