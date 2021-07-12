@@ -125,7 +125,7 @@ function shareForm() {
 	var number_of_guests = form.get('number_of_guests');
 	var date = new Date(reservation_date.toString());
 
-    var url = "https://wa.me/919110258479?text=" 
+    var url = "https://wa.me/919880130646?text=" 
     + "Hello VG Caterers,%0a%0aI'm " + name + ",%0a"
     + "Phone: " + phone + "%0a"
     + "Email: " + email  + "%0a"
@@ -143,7 +143,7 @@ function shareForm() {
 
 function gotowhatsapp() {
 
-    var url = "https://api.whatsapp.com/send?phone=919110258479&text=Hello VG Caterers,%0a%0aI'm contacting%20from%20the%20website vgcatering.me,%0aI%20wanted%20to%20know%20the%20services%20offered%20by%20VG%20Catering%0a%0a(Click on SEND message) -->"; 
+    var url = "https://api.whatsapp.com/send?phone=919880130646&text=Hello VG Caterers,%0a%0aI'm contacting%20from%20the%20website vgcatering.me,%0aI%20wanted%20to%20know%20the%20services%20offered%20by%20VG%20Catering%0a%0a(Click on SEND message) -->"; 
 
     window.open(url, '_blank').focus();
 }
