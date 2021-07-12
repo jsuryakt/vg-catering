@@ -436,7 +436,22 @@ section::before,section::after {
     width:100%;
     text-align:right;
 }
-.social-bar a {
+
+.social-bar span{
+    cursor: pointer;
+    display:inline-block;
+    margin-right:11px;
+    font-size:2.15em;
+    text-decoration:none;
+    color:#540d04;
+    opacity:1;
+    filter:alpha(opacity=100);
+    -webkit-transition:opacity 350ms ease;
+    -moz-transition:opacity 350ms ease;
+    -o-transition:opacity 350ms ease;
+    transition:opacity 350ms ease;
+}
+.social-bar a{
     display:inline-block;
     margin-right:11px;
     font-size:2.15em;
@@ -459,6 +474,34 @@ section::before,section::after {
     color: #ffd000;
     background: #540d04;
 }
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin: 15px;
+  }
+  .alert-box {
+    display: none;
+  }
+  
+  .alert.success {background-color: #04AA6D;}
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
 
 /* ==========================================================================
     11. Responsive styles 
@@ -503,10 +546,10 @@ section::before,section::after {
 
 @media (max-width:767px) {
     #header .banner h1 {
-        font-size:30px;
+        font-size:40px;
     }
     #header .subtitle h4 {
-        font-size: 18px;
+        font-size: 22px;
     }
     .subtitle h3 {
         font-size: 18px;

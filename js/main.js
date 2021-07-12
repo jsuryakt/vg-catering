@@ -96,3 +96,49 @@ $(document).ready(function() {
 
 
 });
+
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+
+// var form = document.getElementById("myForm");
+function handleForm() { 
+	// event.preventDefault(); 
+	for (let element of document.getElementsByClassName("alert-box")){
+		element.style.display="block";
+	 }
+	//  shareForm();
+	} 
+// form.addEventListener('submit', handleForm);
+
+// function shareForm() {
+	// var form = document.getElementById("myForm")
+	//var name = form.get('name')
+	//var email = form.get('email')
+    // var phone = form.get('phone');
+	// var reservation_date = form.get('reservation_date');
+	// var number_of_guests = form.get('number_of_guests');
+
+    // var url = "https://wa.me/919110258479?text=" 
+    // + "Name: " + name + "%0a"
+    // + "Phone: " + phone + "%0a"
+    // + "Email: " + email  + "%0a"
+    // + "Reservation Date: " + reservation_date + "%0a"
+	// + "Guests: " + number_of_guests;
+
+    // window.open(url, '_blank').focus();
+// }
+
+function gotowhatsapp() {
+
+    var url = "https://api.whatsapp.com/send?phone=919110258479&text=Hello VG Caterers,%0a%0aI'm contacting%20from%20the%20website,%0aI%20want%20to%20know%20the%20services%20offered%20by%20VG%20Catering..."; 
+
+    window.open(url, '_blank').focus();
+}
