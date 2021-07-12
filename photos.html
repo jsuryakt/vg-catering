@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <style>
 
         * {
@@ -75,7 +76,6 @@ img {
     <div class="header" id="myHeader">
         <h1>Some clicks from our recent orders.</h1>
         <p>Click on the buttons to change the view.</p>
-        <button class="btn" onclick="one()">Icon View</button>
         <button class="btn" onclick="two()">Grid View</button>
         <button class="btn" onclick="four()">Full size</button>   
       </div>
@@ -119,11 +119,6 @@ var elements = document.getElementsByClassName("column");
 var i;
 
 // Full-width images
-function one() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "33%";
-  }
-}
 
 function two() {
   for (i = 0; i < elements.length; i++) {

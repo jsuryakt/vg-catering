@@ -143,7 +143,7 @@ function shareForm() {
 
 function gotowhatsapp() {
 
-    var url = "https://api.whatsapp.com/send?phone=919110258479&text=Hello VG Caterers,%0a%0aI'm contacting%20from%20the%20website,%0aI%20want%20to%20know%20the%20services%20offered%20by%20VG%20Catering..."; 
+    var url = "https://api.whatsapp.com/send?phone=919110258479&text=Hello VG Caterers,%0a%0aI'm contacting%20from%20the%20website vgcatering.me,%0aI%20wanted%20to%20know%20the%20services%20offered%20by%20VG%20Catering%0a%0a(Click on SEND message) -->"; 
 
     window.open(url, '_blank').focus();
 }
