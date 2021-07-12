@@ -8,6 +8,21 @@
   <head>
     <title>VG Catering</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YX6SMCZ7H9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-YX6SMCZ7H9");
+    </script>
+
     <!-- meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -15,7 +30,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 
     <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -29,7 +44,6 @@
       href="https://fonts.googleapis.com/css?family=Kreon:300,400,700"
     />
     <style>
-      
       .item img {
         width: 100%;
         height: auto;
@@ -38,7 +52,7 @@
         padding-left: 30px;
         padding-right: 30px;
       }
-       .carousel-control .fa-chevron-left,
+      .carousel-control .fa-chevron-left,
       .carousel-control .fa-chevron-right {
         position: absolute;
         width: 30px;
@@ -49,12 +63,14 @@
         transform: translate(0, -50%);
         color: black;
       }
-       .carousel-control.right {
+      .carousel-control.right {
         right: 0;
         left: auto;
       }
-      .carousel-control .fa-chevron-left {}
-      .carousel-control .fa-chevron-right {}
+      .carousel-control .fa-chevron-left {
+      }
+      .carousel-control .fa-chevron-right {
+      }
       .carousel {
         position: relative;
       }
@@ -78,11 +94,11 @@
         font-size: 20px;
         color: #fff;
         text-align: center;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
         background-color: rgba(0, 0, 0, 0);
         filter: alpha(opacity=50);
-        opacity: .5;
-      }  
+        opacity: 0.5;
+      }
     </style>
     <!-- js -->
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -150,7 +166,14 @@
           <h1 class="">VG Catering</h1>
         </div>
         <div class="subtitle"><h4>Serving Smiles</h4></div>
-        <div class="subtitle"><img src="img/veg_non_veg.png" height="80px" width="160px" alt="Veg & Non-Veg"></div>
+        <div class="subtitle">
+          <img
+            src="img/veg_non_veg.png"
+            height="80px"
+            width="160px"
+            alt="Veg & Non-Veg"
+          />
+        </div>
       </div>
       <div class="bottom text-center">
         <a id="scrollDownArrow" href="#"><i class="fas fa-chevron-down"></i></a>
@@ -241,10 +264,10 @@
     <!-- #facts -->
     <section class="ss-style-top"></section>
     <div id="snaps" class="container inner">
-        <h2 class="section-title text-center">Delicacies served</h2>
-        <p class="lead main text-center">
-            Some of the mouth watering delicacies we offer 
-          </p>
+      <h2 class="section-title text-center">Delicacies served</h2>
+      <p class="lead main text-center">
+        Some of the mouth watering delicacies we offer
+      </p>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -272,79 +295,155 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="img/carousel/slide_0.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_0.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_1.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_1.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_2.jpeg" loading="lazy" alt="VG Caterers" />
-          </div>
-          
-          <div class="item">
-            <img src="img/carousel/slide_2_5.jpeg" loading="lazy" alt="VG Caterers" />
-          </div>
-
-          <div class="item">
-            <img src="img/carousel/slide_3.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_2.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_4.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_2_5.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_4_5.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_3.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_5.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_4.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_5_5.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_4_5.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_6.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_5.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_7.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_5_5.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_7_5.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_6.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_8.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_7.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_8_4.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_7_5.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_8_5.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_8.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_9.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_8_4.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_10.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_8_5.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_10_5.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_9.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
 
           <div class="item">
-            <img src="img/carousel/slide_11.jpeg" loading="lazy" alt="VG Caterers" />
+            <img
+              src="img/carousel/slide_10.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="img/carousel/slide_10_5.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="img/carousel/slide_11.jpeg"
+              loading="lazy"
+              alt="VG Caterers"
+            />
           </div>
         </div>
 
@@ -359,12 +458,15 @@
         </a>
       </div>
       <div class="text-center">
-        <button onclick="window.location.href='photos.html'" type="button" class="btn btn-warning all-but btn-lg">
+        <button
+          onclick="window.location.href='photos.html'"
+          type="button"
+          class="btn btn-warning all-but btn-lg"
+        >
           View all Photos
         </button>
-        </div>
+      </div>
     </div>
-
 
     <div id="food-menu" class="light-wrapper">
       <div class="container inner">
@@ -520,7 +622,7 @@
                 <li>Liqueur</li>
               </ul>
             </div> -->
-          <!-- </div>
+        <!-- </div>
         </div> -->
       </div>
       <!-- /.container -->
@@ -537,8 +639,14 @@
         </p>
         <div class="row">
           <div class="col-md-6">
-            <form class="form form-table" method="post" name="" id="myForm" action="https://formsubmit.co/contact.vgcatering@gmail.com"
-            onsubmit="handleForm()">
+            <form
+              class="form form-table"
+              method="post"
+              name=""
+              id="myForm"
+              action="https://formsubmit.co/contact.vgcatering@gmail.com"
+              onsubmit="handleForm()"
+            >
               <div class="form-group">
                 <h4>
                   Fill the form for order reservation (all fields required)
@@ -561,13 +669,25 @@
               <div class="row">
                 <div class="col-lg-6 col-md-6 form-group">
                   <label class="sr-only" for="email1">email</label>
-                  <input type="hidden" name="_subject" value="New Reservation! from vgcatering.me">
-                  <input type="text" name="_honey" style="display:none">
-                  <input type="hidden" name="_cc" value="jsuryakt@gmail.com">
-                  <input type="hidden" name="_next" value="https://vgcatering.me/thanks.html">
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_autoresponse" value="Thank you for the reservation at VG Catering @vgcatering.me">
-                  <input type="hidden" name="_template" value="table">
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Reservation! from vgcatering.me"
+                  />
+                  <input type="text" name="_honey" style="display: none" />
+                  <input type="hidden" name="_cc" value="jsuryakt@gmail.com" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://vgcatering.me/thanks.html"
+                  />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input
+                    type="hidden"
+                    name="_autoresponse"
+                    value="Thank you for the reservation at VG Catering @vgcatering.me"
+                  />
+                  <input type="hidden" name="_template" value="table" />
                   <input
                     class="form-control hint"
                     type="email"
@@ -594,8 +714,17 @@
                   <label class="sr-only" for="reserv_date1"
                     >reservation date</label
                   >
-                  <input class="form-control datepicker hasDatepicker hint" id="reserv_date1" required
-                  name="reservation_date" placeholder="Reservation Date"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+                  <input
+                    class="form-control datepicker hasDatepicker hint"
+                    id="reserv_date1"
+                    required
+                    name="reservation_date"
+                    placeholder="Reservation Date"
+                    type="text"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    id="date"
+                  />
                 </div>
                 <div class="col-lg-6 col-md-6 form-group">
                   <label class="sr-only" for="numb_guests1"
@@ -613,14 +742,16 @@
               </div>
               <div class="row">
                 <div class="col-lg-12 col-md-12">
-                  <p>
-                    We will contact you at the earliest.
-                  </p>
+                  <p>We will contact you at the earliest.</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12 col-md-12">
-                  <button type="submit" onclick="shareForm()" class="btn btn-danger btn-lg">
+                  <button
+                    type="submit"
+                    onclick="shareForm()"
+                    class="btn btn-danger btn-lg"
+                  >
                     Reserve!
                   </button>
                 </div>
@@ -628,37 +759,49 @@
             </form>
           </div>
           <div class="alert-box">
-          <div class="alert success">
-            <span class="closebtn">&times;</span>  
-            <strong>Yayy!</strong> We will contact you soon!
+            <div class="alert success">
+              <span class="closebtn">&times;</span>
+              <strong>Yayy!</strong> We will contact you soon!
+            </div>
           </div>
-        </div>
           &nbsp;
           <!-- col-md-6 -->
           <div class="col-md-5 col-md-offset-1">
             <h3><i class="fas fa-mobile fa-fw"></i>Contact VG</h3>
             <p>
               Email:
-              <a href="mailto:contact.vgcatering@gmail.com">contact.vgcatering@gmail.com</a>
+              <a href="mailto:contact.vgcatering@gmail.com"
+                >contact.vgcatering@gmail.com</a
+              >
             </p>
-            <p>Phone: 
-            <a href="tel:9880130646">9880130646</a> (Yogish Kotian)
+            <p>
+              Phone: <a href="tel:9880130646">9880130646</a> (Yogish Kotian)
             </p>
-            <p>&emsp;&emsp;&emsp;<a href="tel:9901913024">9901913024</a> (Ganesh Suvarna)</p>
+            <p>
+              &emsp;&emsp;&emsp;<a href="tel:9901913024">9901913024</a> (Ganesh
+              Suvarna)
+            </p>
 
             <h3><i class="fas fa-map-marker fa-fw"></i>Directions</h3>
             <p>
-              Shri Vaidyanatha Residency, Ramal Katte, Thumbay, Bantwala, Mangalore, Karnataka 574219
+              Shri Vaidyanatha Residency, Ramal Katte, Thumbay, Bantwala,
+              Mangalore, Karnataka 574219
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3982805.0214417656!2d75.0011750843154!3d12.8782429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4a73fdfa6bb1f%3A0xa0b0d4a78f6ce3ea!2sV.G%20CATERERS!5e0!3m2!1sen!2sin!4v1626003170311!5m2!1sen!2sin" width="330" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3982805.0214417656!2d75.0011750843154!3d12.8782429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4a73fdfa6bb1f%3A0xa0b0d4a78f6ce3ea!2sV.G%20CATERERS!5e0!3m2!1sen!2sin!4v1626003170311!5m2!1sen!2sin"
+              width="330"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
 
             <h3><i class="fas fa-clock fa-fw"></i>Hours</h3>
             <!-- <h4>Breakfast</h4> -->
             <p>
-              Mon to Fri : 9:00 AM - 11:00 PM<br />Sat &amp; Sun : 8:00 AM - 11:30
-              PM
+              Mon to Fri : 9:00 AM - 11:00 PM<br />Sat &amp; Sun : 8:00 AM -
+              11:30 PM
             </p>
-
           </div>
           <!-- col-md-6 -->
         </div>
@@ -669,44 +812,51 @@
     </div>
     <!-- #reservation -->
 
-
     <footer id="footer" class="dark-wrapper">
       <span
-      onclick="gotowhatsapp()"
-style="
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  right: 30px;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 2px 2px 3px #999;
-  float:right;
-  z-index: 100;
-"
->
-<img
-  src="img/whatsapp.png"
-  alt=""
-  height="60px"
-  width="60px"
-/>
-    </span>
+        onclick="gotowhatsapp()"
+        style="
+          position: fixed;
+          width: 50px;
+          height: 50px;
+          bottom: 40px;
+          right: 30px;
+          color: #fff;
+          border-radius: 50px;
+          text-align: center;
+          cursor: pointer;
+          box-shadow: 2px 2px 3px #999;
+          float: right;
+          z-index: 100;
+        "
+      >
+        <img src="img/whatsapp.png" alt="" height="60px" width="60px" />
+      </span>
       <!-- <section class="ss-style-top"></section> -->
       <div class="container inner">
         <div class="row">
           <div class="col-sm-6">
             &copy; Copyright VG Catering 2021
             <br />Designed By
-            <a class="themeBy" href="https://www.linkedin.com/in/jsuryakt" target="_blank">Jayasurya</a>
+            <a
+              class="themeBy"
+              href="https://www.linkedin.com/in/jsuryakt"
+              target="_blank"
+              >Jayasurya</a
+            >
           </div>
           <div class="col-sm-6">
             <div class="social-bar">
-              <span onclick="gotowhatsapp()" class="fab fa-whatsapp tooltipped" title=""></span>
-              <a href="#" class="fab fa-facebook-square tooltipped" title=""></a>
+              <span
+                onclick="gotowhatsapp()"
+                class="fab fa-whatsapp tooltipped"
+                title=""
+              ></span>
+              <a
+                href="#"
+                class="fab fa-facebook-square tooltipped"
+                title=""
+              ></a>
             </div>
           </div>
         </div>
@@ -714,7 +864,7 @@ style="
       <!-- /.container -->
     </footer>
 
-     <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/jquery.actual.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
