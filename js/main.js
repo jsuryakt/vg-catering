@@ -108,33 +108,32 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// var form = document.getElementById("myForm");
+var form = document.getElementById("myForm");
 function handleForm() { 
 	// event.preventDefault(); 
 	for (let element of document.getElementsByClassName("alert-box")){
 		element.style.display="block";
 	 }
-	//  shareForm();
+	 shareForm();
 	} 
-// form.addEventListener('submit', handleForm);
+form.addEventListener('submit', handleForm);
 
-// function shareForm() {
-	// var form = document.getElementById("myForm")
-	//var name = form.get('name')
-	//var email = form.get('email')
-    // var phone = form.get('phone');
-	// var reservation_date = form.get('reservation_date');
-	// var number_of_guests = form.get('number_of_guests');
+function shareForm() {
+	var name = form.get('name');
+	var email = form.get('email');
+    var phone = form.get('phone');
+	var reservation_date = form.get('reservation_date');
+	var number_of_guests = form.get('number_of_guests');
 
-    // var url = "https://wa.me/919110258479?text=" 
-    // + "Name: " + name + "%0a"
-    // + "Phone: " + phone + "%0a"
-    // + "Email: " + email  + "%0a"
-    // + "Reservation Date: " + reservation_date + "%0a"
-	// + "Guests: " + number_of_guests;
+    var url = "https://wa.me/919110258479?text=" 
+    + "Name: " + name + "%0a"
+    + "Phone: " + phone + "%0a"
+    + "Email: " + email  + "%0a"
+    + "Reservation Date: " + reservation_date + "%0a"
+	+ "Guests: " + number_of_guests;
 
-    // window.open(url, '_blank').focus();
-// }
+    window.open(url, '_blank').focus();
+}
 
 function gotowhatsapp() {
 
