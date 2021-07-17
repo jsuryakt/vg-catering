@@ -1,71 +1,97 @@
 <html>
-<head>
+  <head>
     <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <style>
+      
+      * {
+        box-sizing: border-box;
+      }
 
-        * {
-  box-sizing: border-box;
-}
+      #footer {
+        margin: 0;
+        color: var(--text-darker);
+        text-align: center;
+        padding: 2rem 1rem;
+      }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+      #footer-link {
+        color: #3b4250;
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
 
-.header {
-  text-align: center;
-  padding:0px 32px;
-  margin: 0;
-}
+      #arrow-left{
+        height: 2rem;
+        width: 2rem;
+        margin-bottom: -0.3rem;
+      }
+      #arrow-top-left{
+        height: 4rem;
+        width: 4rem;
+      }
 
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-/* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 4px;
-}
+      .header {
+        text-align: center;
+        padding: 0px 32px;
+        margin: 0;
+      }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-img {
-    padding: 5px;
-}
+      .row {
+        display: -ms-flexbox; /* IE 10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE 10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  margin: 0px 5px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
+      /* Create two equal columns that sits next to each other */
+      .column {
+        -ms-flex: 50%; /* IE 10 */
+        flex: 50%;
+        padding: 0 4px;
+      }
 
-.btn:hover {
-  background-color: #ddd;
-}
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      img {
+        padding: 5px;
+      }
 
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-.back-btn {
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 10px;
-}
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 10px 16px;
+        margin: 0px 5px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      .btn:hover {
+        background-color: #ddd;
+      }
+
+      .btn.active {
+        background-color: #666;
+        color: white;
+      }
+      .back-btn {
+        margin-top: 25px;
+        margin-left: 15px;
+        margin-right: 10px;
+      }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script
@@ -81,101 +107,213 @@ img {
 
       gtag("config", "G-YX6SMCZ7H9");
     </script>
-</head>
-<body>
-    <a  href="https://vgcatering.me" style="color: black;"><i class="fas fa-arrow-left fa-2x back-btn"></i></a>
+  </head>
+  <body>
+    <a id="footer-link" href="https://vgcatering.me/">
+      <svg id="arrow-top-left" viewBox="0 0 20 20">
+        <path
+          d="M12.94,7.86a.5.5,0,0,1,.71,0l.2.2a.49.49,0,0,1,.15.36v7.16a.49.49,0,0,1-.15.36l-.2.2a.5.5,0,0,1-.71,0L9.15,12.35a.48.48,0,0,1,0-.7Z"
+        ></path>
+      </svg>
+    </a>
 
-
-    <div class="header" id="myHeader">
-        <h1>Some clicks from our recent orders.</h1>
-        <p>Click on the buttons to change the view.</p>
-        <button class="btn" onclick="two()">Grid View</button>
-        <button class="btn" onclick="four()">Full size</button>   
+    <div class="header">
+      <h1>Some clicks from our recent orders.</h1>
+      <p>Click on the buttons to change the view.</p>
+      <button class="btn" onclick="two()">Grid View</button>
+      <button class="btn" onclick="four()">Full size</button>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_0.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_1.jpeg "
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_2.jpeg "
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_2_5.jpeg "
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_3.jpeg "
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_4.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_4_5.jpeg "
+          style="width: 100%; cursor: zoom-in"
+        />
       </div>
-      <div class="row"> 
-        <div class="column">
-          <img data-enlargeable loading="lazy"  src="img/carousel/slide_0.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_1.jpeg " style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_2.jpeg " style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_2_5.jpeg " style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_3.jpeg " style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_4.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_4_5.jpeg " style="width:100%; cursor: zoom-in">
-        </div>
-        <div class="column">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_5.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_5_5.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_6.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_7.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_7_5.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_8.jpeg" style="width:100%; cursor: zoom-in">
-        </div>  
-        <div class="column">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_8_4.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_8_5.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_9.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_10.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_10_5.jpeg" style="width:100%; cursor: zoom-in">
-          <img data-enlargeable loading="lazy" src="img/carousel/slide_11.jpeg" style="width:100%; cursor: zoom-in">
-        </div>
+      <div class="column">
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_5.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_5_5.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_6.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_7.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_7_5.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_8.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
       </div>
-
-      <div style="text-align: center; margin-bottom: 20px;">
-      <a href="javascript:window.history.back();" style="color: black;text-decoration: none;"><i class="fas fa-arrow-left fa-2x back-btn"></i>Go back</a>
+      <div class="column">
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_8_4.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_8_5.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_9.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_10.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_10_5.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+        <img
+          data-enlargeable
+          loading="lazy"
+          src="img/carousel/slide_11.jpeg"
+          style="width: 100%; cursor: zoom-in"
+        />
+      </div>
     </div>
 
-<script>
-// Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
+    <p id="footer">
+      <a id="footer-link" href="https://vgcatering.me/">
+        <svg id="arrow-left" viewBox="0 0 20 20">
+          <path
+            d="M12.94,7.86a.5.5,0,0,1,.71,0l.2.2a.49.49,0,0,1,.15.36v7.16a.49.49,0,0,1-.15.36l-.2.2a.5.5,0,0,1-.71,0L9.15,12.35a.48.48,0,0,1,0-.7Z"
+          ></path>
+        </svg>
+        Go back to VG Catering</a
+      >
+    </p>
 
-// Declare a "loop" variable
-var i;
+    <script>
+      // Get the elements with class="column"
+      var elements = document.getElementsByClassName("column");
 
-// Full-width images
+      // Declare a "loop" variable
+      var i;
 
-function two() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "50%";
-  }
-}
+      // Full-width images
 
-// Two images side by side
+      function two() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.flex = "50%";
+        }
+      }
 
-// Four images side by side
-function four() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "100%";
-  }
-}
+      // Two images side by side
 
-$('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
-  var src = $(this).attr('src');
-  var modal;
+      // Four images side by side
+      function four() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.flex = "100%";
+        }
+      }
 
-  function removeModal() {
-    modal.remove();
-    $('body').off('keyup.modal-close');
-  }
-  modal = $('<div>').css({
-    background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
-    backgroundSize: 'contain',
-    width: '100%',
-    height: '100%',
-    position: 'fixed',
-    zIndex: '10000',
-    top: '0',
-    left: '0',
-    cursor: 'zoom-out'
-  }).click(function() {
-    removeModal();
-  }).appendTo('body');
-  //handling ESC
-  $('body').on('keyup.modal-close', function(e) {
-    if (e.key === 'Escape') {
-      removeModal();
-    }
-  });
-});
-</script>
-</body>
+      $("img[data-enlargeable]")
+        .addClass("img-enlargeable")
+        .click(function () {
+          var src = $(this).attr("src");
+          var modal;
+
+          function removeModal() {
+            modal.remove();
+            $("body").off("keyup.modal-close");
+          }
+          modal = $("<div>")
+            .css({
+              background: "RGBA(0,0,0,.5) url(" + src + ") no-repeat center",
+              backgroundSize: "contain",
+              width: "100%",
+              height: "100%",
+              position: "fixed",
+              zIndex: "10000",
+              top: "0",
+              left: "0",
+              cursor: "zoom-out",
+            })
+            .click(function () {
+              removeModal();
+            })
+            .appendTo("body");
+          //handling ESC
+          $("body").on("keyup.modal-close", function (e) {
+            if (e.key === "Escape") {
+              removeModal();
+            }
+          });
+        });
+    </script>
+  </body>
 </html>
