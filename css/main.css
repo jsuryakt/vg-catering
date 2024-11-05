@@ -92,7 +92,7 @@ section::before, section::after {
     02. Header
 ========================================================================== */
 #header {
-  background-image: url(../img/night.jpeg);
+  background-image: url(../img/night.jpg);
   /* -webkit-background-size:@@prefixmycss->No equivalent; */
   -moz-background-size: cover;
   /* -o-background-size:@@prefixmycss->No equivalent; */
