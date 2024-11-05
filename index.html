@@ -255,8 +255,7 @@
                 <div class="col-wrapper">
                     &nbsp; &nbsp;
                     <div class="icon-border bm10"><i class="fas fa-truck"></i></div>
-
-                    <h4 title="Delicious orders served">5000+</h4>
+                    <h4 id="orders" title="Delicious orders served">5000+</h4>
                     <div class="success">
                         <p>Orders Delivered</p>
                     </div>
@@ -266,12 +265,43 @@
                 <div class="col-wrapper">
                     &nbsp; &nbsp;
                     <div class="icon-border bm10"><i class="fas fa-users"></i></div>
-                    <h4 title="Very happy customers">2000+</h4>
+                    <h4 id="customers" title="Very happy customers">2000+</h4>
                     <div class="success">
                         <p>Happy Customers</p>
                     </div>
                 </div>
             </div>
+
+            <script>
+                function incrementNumber(id, start, end, duration) {
+                    const element = document.getElementById(id);
+                    let current = start;
+                    const increment = (end - start) / (duration / 10);
+
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= end) {
+                            current = end;
+                            clearInterval(timer);
+                        }
+                        element.textContent = Math.floor(current) + '+';
+                    }, 10);
+                }
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                incrementNumber('orders', 100, 5000, 2000);
+                                incrementNumber('customers', 100, 2000, 2000);
+                                observer.disconnect();
+                            }
+                        });
+                    });
+
+                    observer.observe(document.querySelector('#facts'));
+                });
+            </script>
         </div>
     </div>
     <!-- /.container -->

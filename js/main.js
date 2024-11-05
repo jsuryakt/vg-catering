@@ -144,6 +144,35 @@ function shareForm() {
     }
 }
 
+function incrementNumber(id, start, end, duration) {
+    const element = document.getElementById(id);
+    let current = start;
+    const increment = (end - start) / (duration / 10);
+
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= end) {
+            current = end;
+            clearInterval(timer);
+        }
+        element.textContent = Math.floor(current) + '+';
+    }, 10);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                incrementNumber('orders', 100, 5000, 2000);
+                incrementNumber('customers', 100, 2000, 2000);
+                observer.disconnect();
+            }
+        });
+    });
+
+    observer.observe(document.querySelector('#facts'));
+});
+
 function gotowhatsapp() {
 
     var url = "https://api.whatsapp.com/send?phone=919880130646&text=Hello VG Caterers,%0a%0aI'm contacting%20from%20the%20website vgcatering.me,%0aI%20wanted%20to%20know%20the%20services%20offered%20by%20VG%20Catering%0a%0a(Click on SEND message) -->";
