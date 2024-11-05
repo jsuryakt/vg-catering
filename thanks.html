@@ -1,41 +1,48 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <script src='https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js'></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <script src='js/canvas-confetti.js'></script>
+    <title>Thank you | VG Catering</title>
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-YX6SMCZ7H9"
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YX6SMCZ7H9"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag("config", "G-YX6SMCZ7H9");
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+
+        gtag("config", "G-YX6SMCZ7H9");
     </script>
-    <link rel="icon" type="image/png" href="img/logo.jpeg" />
+    <link rel="icon" type="image/png" href="img/logo.jpeg"/>
     <style>
-        @media (max-width:767px) {
-      .col h1 {
-        font-size: 40px !important;
-      }
-      .col .col-md-8 {
-        padding: 20px !important;
+      @media (max-width: 767px) {
+        .col h1 {
+          font-size: 40px !important;
+        }
+
+        .col .col-md-8 {
+          padding: 20px !important;
+        }
+
+        p {
+          font-size: 17px !important;
+        }
+
+        a {
+          font-size: 17px !important;
+        }
+
+
       }
 
-       p {
-        font-size: 17px !important;
-      }
-      a {
-        font-size: 17px !important; 
-      }
-
-    
-}
       html,
       body {
         background-color: #ffffff;
@@ -76,46 +83,44 @@
         font-size: 16px;
       }
 
-      .backlink {
-        margin-top: 30px;
-      }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="col">
+</head>
+<body>
+<div class="container">
+    <div class="col">
         <div class="col-md-8 offset-md-2">
-          <h1 onclick="frame()">Thank You!</h1>
-          <p>The reservation form was submitted successfully.</p>
-          <p> We assure you the best service possible and will contact you soon.</p>
-          <p>
-            Go back to
-            <a class="links" href="http://vgcatering.me/">VG Catering</a>
-          </p>
+            <h1 onclick="frame()">Thank You!</h1>
+            <p>The reservation form was submitted successfully.</p>
+            <p> We assure you the best service possible and will contact you soon.</p>
+            <p>
+                Go back to
+                <a class="links" href="https://jsuryakt.github.io/vg-catering/">VG Catering</a>
+            </p>
         </div>
-      </div>
     </div>
+</div>
 
-    <script>
-      var colors = ["#540d04", "#ffd000"];
+<script>
+    var colors = ["#540d04", "#ffd000"];
 
-      function frame() {
+    function frame() {
         confetti({
-          particleCount: 60,
-          angle: 60,
-          spread: 100,
-          origin: { x: 0 },
-          colors: colors,
+            particleCount: 60,
+            angle: 60,
+            spread: 100,
+            origin: {x: 0},
+            colors: colors,
         });
         confetti({
-          particleCount: 60,
-          angle: 120,
-          spread: 100,
-          origin: { x: 1 },
-          colors: colors,
+            particleCount: 60,
+            angle: 120,
+            spread: 100,
+            origin: {x: 1},
+            colors: colors,
         });
-      }
-      window.onload = frame();
-    </script>
-  </body>
+    }
+
+    window.onload = () => frame();
+</script>
+</body>
 </html>
