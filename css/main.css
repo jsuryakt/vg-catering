@@ -136,6 +136,7 @@ section::before, section::after {
   display: inline-block;
   background: #ffd000;
   padding: 0 18px;
+  border-radius: 1rem;
 }
 
 #header .subtitle h4 {
@@ -144,6 +145,7 @@ section::before, section::after {
   color: #ffd000;
   font-size: 38px;
   padding: 0 10px;
+  border-radius: 1rem;
 }
 
 .all-but {
@@ -625,6 +627,10 @@ section::before, section::after {
     -moz-border-radius: 0 0 100% 100%;
     border-radius: 0 0 100% 100%;
     padding: 12px;
+  }
+
+  #logo img {
+    border-radius: 50%;
   }
 }
 
